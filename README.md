@@ -20,30 +20,10 @@ To fetch fresh repository, follow [section below](#how-to-clone-the-repository)
 To clone the repository, run the following command
 
 ```
-git clone https://github.com/saleor/saleor-platform.git --recursive --jobs 3
+git clone https://github.com/yasir3156/saleor-platform.git --recursive --jobs 3
 ```
 
 ## How to run it?
-
-### With Makefile
-We prepared a few `make` commands for you
-
-#### Bootstrap app
-```shell
-make
-```
-
-#### Run all services
-```shell
-make run
-```
-
-#### Run only backend services
-```shell
-make run-backend 
-```
-
-See [Makefile](Makefile) for all commands 
 
 ### With Docker steps
 
@@ -82,12 +62,12 @@ docker-compose run --rm api python3 manage.py populatedb --createsuperuser
 ```shell
 docker-compose up
 ```
-*Both Storefront and Dashboard are quite big frontend projects and it might take up to a few minutes for them to compile depending on your CPU. If nothing shows up on port 3001 or 9000, please wait until `Compiled successfully` shows in the console output.*
+*Both Storefront and Dashboard are quite big frontend projects and it might take up to a few minutes for them to compile depending on your CPU. If nothing shows up on port 3001 or 9001, please wait until `Compiled successfully` shows in the console output.*
 
 ## Where is the application running?
 - Saleor Core (API) - http://localhost:8000
 - Saleor React Storefront - http://localhost:3001
-- Saleor Dashboard - http://localhost:9000
+- Saleor Dashboard - http://localhost:9001
 - Jaeger UI (APM) - http://localhost:16686
 - Mailhog (Test email interface) - http://localhost:8025 
 
